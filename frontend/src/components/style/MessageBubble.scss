@@ -1,0 +1,31 @@
+.message-bubble {
+  display: flex;
+  margin-bottom: 12px;
+
+  &--user {
+    justify-content: flex-end;
+  }
+
+  &--ai {
+    justify-content: flex-start;
+  }
+
+  &__content {
+    max-width: 70%;
+    padding: 10px 14px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  &__content--user {
+    background: var(--user-bubble);
+    color: var(--user-bubble-text);
+    border-radius: 16px 16px 4px 16px;
+  }
+
+  &__content--ai {
+    background: var(--ai-bubble);
+    color: var(--ai-bubble-text);
+    border-radius: 16px 16px 16px 4px;
+  }
+}
